@@ -21,12 +21,12 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl font-bold text-center mb-6 text-[#f9a825]">
           Titan Board – Growth Strategy Edition
         </h1>
-        <p className="text-lg sm:text-xl text-center text-gray-100 mb-8">
+        <p className="text-lg sm:text-xl text-center text-white mb-8">
           Your personal board of AI-powered business advisors. Built to help you scale sales, automate ops, secure your systems, and drive strategic growth.
         </p>
         <div className="bg-[#1e223c] p-6 rounded-xl shadow-inner mb-8">
           <h2 className="text-xl font-semibold text-[#f9a825] text-center">🚀 Real Results</h2>
-          <p className="text-gray-100 text-center mt-3">
+          <p className="text-white text-center mt-3">
             "Before Titans, we were fumbling around with disconnected tools and no clear path to scale. In just 3 weeks, we closed more deals, rewrote our marketing strategy, and streamlined ops." – <span className="italic">Kai, SaaS Founder</span>
           </p>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <p className="text-sm text-gray-400 mt-6 text-center">
+        <p className="text-sm text-white mt-6 text-center">
           Powered by OpenAI. Secured by CyberSecure Hawaii.
         </p>
       </div>
