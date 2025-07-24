@@ -1,7 +1,6 @@
 // pages/index.tsx
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
 export default function Home() {
@@ -17,27 +16,35 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#f5f7fa] px-4">
-      <div className="max-w-2xl bg-white shadow-xl rounded-2xl p-10 text-center border border-[#cfd8dc]">
-        <h1 className="text-3xl font-bold mb-4 text-[#1a237e]">Titan Board – Growth Strategy Edition</h1>
-        <p className="text-lg text-[#37474f] mb-6">
-          The AI Advisory Board built for scaling businesses. Get expert guidance on sales, automation, ops, compliance, funding, and market strategy.
+    <div className="min-h-screen bg-[#090c1d] text-white px-4 py-12 flex flex-col items-center justify-center">
+      <div className="max-w-3xl w-full bg-[#12152b] rounded-2xl p-10 shadow-2xl border border-[#1e223c]">
+        <h1 className="text-4xl sm:text-5xl font-bold text-center mb-6 text-[#f9a825]">
+          Titan Board – Growth Strategy Edition
+        </h1>
+        <p className="text-lg sm:text-xl text-center text-gray-300 mb-8">
+          Your personal board of AI-powered business advisors. Built to help you scale sales, automate ops, secure your systems, and drive strategic growth.
         </p>
-        <div className="mb-4">
-          <h2 className="text-xl font-semibold text-[#0d47a1]">🚀 Real Results</h2>
-          <p className="text-[#546e7a] mt-2">
-            "Before Titans, we were fumbling around with disconnected tools and no clear path to scale. In 3 weeks, we closed more deals, rewrote our marketing strategy, and streamlined ops." – Kai, SaaS Founder
+        <div className="bg-[#1e223c] p-6 rounded-xl shadow-inner mb-8">
+          <h2 className="text-xl font-semibold text-[#f9a825] text-center">🚀 Real Results</h2>
+          <p className="text-gray-400 text-center mt-3">
+            "Before Titans, we were fumbling around with disconnected tools and no clear path to scale. In just 3 weeks, we closed more deals, rewrote our marketing strategy, and streamlined ops." – <span className="italic">Kai, SaaS Founder</span>
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link href="/register">
-            <Button className="bg-[#0d47a1] hover:bg-[#1565c0] text-white px-6 py-3 rounded-xl">Get Access – $199/mo</Button>
+            <button className="bg-gradient-to-br from-[#4b0082] to-[#6a1b9a] text-white px-6 py-3 rounded-xl shadow-lg hover:from-[#6a1b9a] hover:to-[#4b0082] transition-all">
+              Get Access – $199/mo
+            </button>
           </Link>
           <Link href="/login">
-            <Button className="bg-white border border-[#0d47a1] text-[#0d47a1] hover:bg-[#e3f2fd] px-6 py-3 rounded-xl">Log In</Button>
+            <button className="bg-transparent border border-[#f9a825] text-[#f9a825] px-6 py-3 rounded-xl hover:bg-[#f9a825] hover:text-[#090c1d] transition-all">
+              Log In
+            </button>
           </Link>
         </div>
-        <p className="text-sm text-[#90a4ae] mt-4">Backed by OpenAI. Secured by CyberSecure Hawaii.</p>
+        <p className="text-sm text-gray-500 mt-6 text-center">
+          Powered by OpenAI. Secured by CyberSecure Hawaii.
+        </p>
       </div>
     </div>
   );
