@@ -26,7 +26,7 @@ export default function Home() {
         </p>
         <div className="bg-[#1e223c] p-6 rounded-xl shadow-inner mb-8">
           <h2 className="text-xl font-semibold text-[#f9a825] text-center">🚀 Real Results</h2>
-          <p className="text-gray-400 text-center mt-3">
+          <p className="text-gray-300 text-center mt-3">
             "Before Titans, we were fumbling around with disconnected tools and no clear path to scale. In just 3 weeks, we closed more deals, rewrote our marketing strategy, and streamlined ops." – <span className="italic">Kai, SaaS Founder</span>
           </p>
         </div>
@@ -42,11 +42,10 @@ export default function Home() {
             </button>
           </Link>
         </div>
-        <p className="text-sm text-gray-500 mt-6 text-center">
+        <p className="text-sm text-gray-400 mt-6 text-center">
           Powered by OpenAI. Secured by CyberSecure Hawaii.
         </p>
       </div>
     </div>
   );
 }
-
